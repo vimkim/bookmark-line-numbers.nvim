@@ -96,13 +96,13 @@ end
 -- Key mappings
 vim.api.nvim_set_keymap(
 	"n",
-	"<leader>sp",
+	"<leader>ms",
 	":lua require'bookmark-line-numbers'.save_position()<CR>",
 	{ noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
 	"n",
-	"<leader>op",
+	"<leader>mo",
 	":lua require'bookmark-line-numbers'.open_position()<CR>",
 	{ noremap = true, silent = true }
 )
