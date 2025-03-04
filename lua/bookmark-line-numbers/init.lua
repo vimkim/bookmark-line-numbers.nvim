@@ -107,4 +107,12 @@ vim.api.nvim_set_keymap(
 	{ noremap = true, silent = true }
 )
 
+-- Optional setup function to allow configuration
+function M.setup(opts)
+	-- You can merge opts with defaults if needed
+	-- For example, M.options = vim.tbl_extend("force", M.defaults, opts or {})
+	-- Then perform any initialization if necessary.
+	print("Bookmark Line Numbers Plugin setup called")
+end
+
 return M
