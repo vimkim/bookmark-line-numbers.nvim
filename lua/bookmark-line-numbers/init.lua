@@ -106,6 +106,18 @@ vim.api.nvim_set_keymap(
 	":lua require'bookmark-line-numbers'.open_position()<CR>",
 	{ noremap = true, silent = true }
 )
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>H",
+	":lua require'bookmark-line-numbers'.save_position()<CR>",
+	{ noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>h",
+	":lua require'bookmark-line-numbers'.open_position()<CR>",
+	{ noremap = true, silent = true }
+)
 
 -- Optional setup function to allow configuration
 function M.setup(opts)
