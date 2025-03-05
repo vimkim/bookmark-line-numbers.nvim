@@ -1,7 +1,7 @@
 local M = {}
 
 -- Path to the file that stores the list of saved positions
-local positions_file = ".positions"
+local positions_file = ".bookmarks"
 
 -- Get the project root (assumes git repo or the current directory)
 local function get_project_root()
